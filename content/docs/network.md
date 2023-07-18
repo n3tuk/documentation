@@ -1,5 +1,5 @@
 ---
-title: n3tuk Network Overview
+title: Network
 weight: 1
 bookToc: true
 ---

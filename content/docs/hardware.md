@@ -1,5 +1,5 @@
 ---
-title: n3tuk Hardware Overview
+title: Hardware
 weight: 1
 bookToc: true
 ---
