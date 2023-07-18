@@ -1,0 +1,10 @@
+---
+title: docs.n3t.uk
+baseURL: /
+languageCode: en-gb
+theme: hugo-book
+
+params:
+  BookTheme: dark
+  BookComments: false
+  BookRepo: 'https://github.com/n3tuk/documentation'

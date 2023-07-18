@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Railway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+}
+
+body {
+  font-family: 'Railway', sans-serif;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}
