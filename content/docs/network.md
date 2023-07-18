@@ -1,10 +1,8 @@
 ---
-title: "Network"
+title: n3tuk Network Overview
 weight: 1
-# bookFlatSection: false
-# bookToc: true
-# bookHidden: false
-# bookCollapseSection: false
-# bookComments: false
-# bookSearchExclude: false
+bookToc: true
 ---
+# `n3tuk` Network Overview
+
+TODO

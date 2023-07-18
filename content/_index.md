@@ -1,7 +1,6 @@
 ---
 title: "n3t.uk Documentation"
 date: 2023-07-18T18:10:47+01:00
-draft: true
 bookToC: false
 ---
 ![Network Diagram](/images/network-diagram.svg)

@@ -1,8 +1,7 @@
 ---
-title: "n3tuk Hardware Overview"
+title: n3tuk Hardware Overview
 weight: 1
 bookToc: true
-bookComments: false
 ---
 # `n3tuk` Hardware Overview
 
