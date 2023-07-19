@@ -1,6 +1,8 @@
 ---
 title: Starting the Build
 date: 2023-07-18T23:16:12+01:00
+tags:
+  - hardware
 ---
 Welcome to my first blog in many years, but also an overall opportunity to
 restart the development of my personal and development infrastructure at home.
@@ -36,9 +38,11 @@ The overall plan is:
 * Deploy services such as PostgreSQL, Concourse, GitHub Actions Operator,
   Terraform Cloud Operator, as well as local testing applications.
 
+{{< alert >}}
 I expect this to take most of the rest of 2023 to complete, with some aspects
 using Ansible (such as the physical hosts and virtual machines) and others using
 combinations of Terraform, Flux, Concourse, and GitHub Actions.
+{{< /alert >}}
 
 [action-pull-requester]: https://github.com/n3tuk/action-pull-requester
 [action-synchronise-upstream]: https://github.com/n3tuk/action-synchronise-upstream

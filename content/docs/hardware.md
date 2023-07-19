@@ -1,9 +1,16 @@
 ---
 title: Hardware
-weight: 1
-bookToc: true
+date: 2023-07-18T22:00:00+01:00
+description: |-
+  An overview of the hardware used by the n3tuk infrastructure
+summary: |-
+  An overview of the hardware used to connect and host the `n3tuk` infrastructure,
+  including the kubernetes cluster, storage, and networking, alongside the
+  general configuration and how they're managed.
+tags:
+  - hardware
 ---
-# `n3tuk` Hardware Overview
+# Hardware Overview
 
 There are five main components to the hardware for the `n3tuk` infrastructure:
 

@@ -1,11 +1,12 @@
 ---
-title: Documentation
+title: n3tuk Documentation Website
 date: 2023-07-18T18:10:47+01:00
-bookToC: false
+description: |-
+  An overview of the n3tuk Organisation in GitHub, and how it provides for the
+  management of infrastructure and applications as part of the personal
+  development space for Jonathan Wright.
 ---
 ![Network Diagram](/images/network-diagram.svg)
-
-## `n3tuk` Organisation
 
 The `n3tuk` Organisation is a central organisation within GitHub for the
 management and development of the infrastructure for `n3t.uk`, the personal and
