@@ -1,0 +1,10 @@
+.large-icon svg {
+  float: left;
+  height: 5em;
+  width: 5em;
+  padding: 0.1em 0.5em 0 0;
+}
+
+pre.mermaid {
+	background-color: transparent !important;
+}
