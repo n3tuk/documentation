@@ -26,10 +26,6 @@ MD013:
   # Stern length checking
   stern: false
 
-# single-title
-MD025:
-  front_matter_title: ""
-
 # no-inline-html
 MD033:
   allowed_elements:
