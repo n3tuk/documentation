@@ -12,6 +12,6 @@ summary: |-
 tags:
   - network
 ---
-# Network Overview
-
-TODO
+{{< alert "edit" >}}
+This document is a placeholder; it has yet to be written.
+{{< /alert >}}

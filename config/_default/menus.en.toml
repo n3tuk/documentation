@@ -22,13 +22,13 @@
 
 [[main]]
   name = "Documentation"
-  pageRef = "docs"
+  pageRef = "documentation"
   weight = 20
 
 [[main]]
   name = "Runbooks"
-  pageRef = "docs/runbooks"
-  weight = 30
+  pageRef = "runbooks"
+  weight = 21
 
 [[main]]
   name = "GitHub"
@@ -52,13 +52,23 @@
 
 [[footer]]
   name = "Documentation"
-  pageRef = "docs"
+  pageRef = "documentation"
   weight = 20
 
 [[footer]]
   name = "Runbooks"
-  pageRef = "docs/runbooks"
+  pageRef = "runbooks"
   weight = 30
+
+[[footer]]
+  name = "Hardware"
+  pageRef = "hardware"
+  weight = 40
+
+[[footer]]
+  name = "Network"
+  pageRef = "network"
+  weight = 50
 
 [[footer]]
   name = "Tags"
