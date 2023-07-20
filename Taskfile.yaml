@@ -1,0 +1,48 @@
+---
+version: 3
+interval: 1000ms
+
+tasks:
+  default:
+    cmds:
+      - task: serve
+
+  serve:
+    desc: Start Hugo to serve the content locally
+    summary: |-
+      Start Hugo in serve mode to serve the content locally during development.
+    run: once
+    cmds:
+      - cmd: |
+          hugo serve \
+            --buildDrafts \
+            --buildFuture \
+            --cleanDestinationDir
+            --enableGitInfo \
+            --navigateToChanged \
+            --minify
+
+  fmt:
+    desc: Format all files with their appropriate tools
+    cmds:
+      - task: fmt-md
+
+  fmt-md:
+    desc: Format all markdown with their appropriate tools
+    sources:
+      - ".prettierrc"
+      - "archetypes/**/*.md"
+      - "content/**/*.md"
+    cmds:
+      - cmd: |-
+          find archetypes/ content/ -type f -iname '*.md' \
+            | xargs prettier -w
+
+  build:
+    desc: Run Hugo to build the content for the website
+    summary: |-
+      Run Hugo in build the content locally for the website.
+    run: once
+    cmds:
+      - cmd: |-
+          hugo --buildDrafts --enableGitInfo --minify
