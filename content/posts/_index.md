@@ -6,8 +6,9 @@ summary: |-
   Posts for the `n3tuk` Organisation.
 tags:
   - posts
-draft: true
 groupByYear: true
+cascade:
+  showEdit: false
 ---
 
 {{< large-icon "files" >}} The new `n3tuk` Organisation infrastructure is a
