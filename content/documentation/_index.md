@@ -8,7 +8,6 @@ summary: |-
   important pages.
 tags:
   - documentation
-draft: true
 groupByYear: false
 ---
 

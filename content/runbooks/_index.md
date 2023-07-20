@@ -7,7 +7,6 @@ summary: |-
   Runbooks for the n3tuk Organisation.
 tags:
   - runbook
-draft: true
 groupByYear: false
 ---
 

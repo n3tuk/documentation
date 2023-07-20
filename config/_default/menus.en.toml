@@ -14,14 +14,19 @@
   weight = 20
 
 [[main]]
+  name = "RFCs"
+  pageRef = "rfcs"
+  weight = 21
+
+[[main]]
   name = "Runbooks"
   pageRef = "runbooks"
-  weight = 21
+  weight = 22
 
 [[main]]
   name = "Incidents"
   pageRef = "incidents"
-  weight = 22
+  weight = 23
 
 [[main]]
   name = "GitHub"
@@ -42,22 +47,32 @@
 [[footer]]
   name = "Documentation"
   pageRef = "documentation"
-  weight = 20
+  weight = 10
+
+[[footer]]
+  name = "RFCs"
+  pageRef = "rfcs"
+  weight = 12
 
 [[footer]]
   name = "Runbooks"
   pageRef = "runbooks"
-  weight = 30
+  weight = 13
+
+[[footer]]
+  name = "Incidents"
+  pageRef = "incidents"
+  weight = 14
 
 [[footer]]
   name = "Hardware"
   pageRef = "hardware"
-  weight = 40
+  weight = 15
 
 [[footer]]
   name = "Network"
   pageRef = "network"
-  weight = 50
+  weight = 16
 
 [[footer]]
   name = "Tags"
