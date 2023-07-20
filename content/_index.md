@@ -6,12 +6,13 @@ description: |-
   management of infrastructure and applications as part of the personal
   development space for Jonathan Wright.
 ---
+
 ![Network Diagram](images/network-diagram.svg)
 
 The `n3tuk` Organisation is a central organisation within GitHub for the
 management and development of the infrastructure for `n3t.uk`, the personal and
-development infrastructure for Jonathan Wright ([`@jonathanio`][github-jonathanio]
-on GitHub), which includes:
+development infrastructure for Jonathan Wright
+([`@jonathanio`][github-jonathanio] on GitHub), which includes:
 
 [github-jonathanio]: https://github.com/jonathanio
 
@@ -26,6 +27,7 @@ on GitHub), which includes:
 [cloudflare-pages]: https://pages.cloudflare.com/
 [cloudflare-zero-trust]: https://www.cloudflare.com/zero-trust/
 [aws]: https://aws.amazon.com/
+
 [hardware]: {{< ref "hardware" >}}
 
 ## Components
@@ -44,7 +46,8 @@ The following components used are to build and develop this infrastructure:
 
 [ansible]: https://www.ansible.com/
 [github-ansible]: https://github.com/n3tuk/ansible
-[play-bootstrap]: https://github.com/n3tuk/ansible/blob/main/plays/bootstrap.yaml
+[play-bootstrap]:
+  https://github.com/n3tuk/ansible/blob/main/plays/bootstrap.yaml
 [play-baseline]: https://github.com/n3tuk/ansible/blob/main/plays/baseline.yaml
 [play-all]: https://github.com/n3tuk/ansible/blob/main/plays/all.yaml
 [role-vault]: https://github.com/n3tuk/ansible/tree/main/roles/vault

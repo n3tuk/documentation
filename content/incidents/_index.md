@@ -11,11 +11,11 @@ tags:
 draft: true
 groupByYear: true
 ---
-{{< large-icon "circle-exclamation-check" >}}
-Any semi- or complex infrastructure will have periods of instability or
-unavailability. This section is for recoding these events, their causes, and
-the resolutions in an accessible format for preservation of knowledge.
 
-{{< alert "circle-exclamation-check" >}}
-There have been no recorded incidents at this time.
-{{< /alert >}}
+{{< large-icon "circle-exclamation-check" >}} Any semi- or complex
+infrastructure will have periods of instability or unavailability. This section
+is for recoding these events, their causes, and the resolutions in an accessible
+format for preservation of knowledge.
+
+{{< alert "circle-exclamation-check" >}} There have been no recorded incidents
+at this time. {{< /alert >}}

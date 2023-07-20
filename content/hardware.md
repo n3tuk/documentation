@@ -2,7 +2,7 @@
 title: Hardware Overview
 date: 2023-07-18T22:00:00+01:00
 description: |-
-  An overview of the hardware used by the n3tuk infrastructure
+  An overview of the hardware used by the n3tuk infrastructure.
 summary: |-
   An overview of the hardware used to connect and host the `n3tuk` infrastructure,
   including the kubernetes cluster, storage, and networking, alongside the
@@ -22,10 +22,14 @@ tags:
 |          Network | Intel i226-V 2.5GbE Port                                           |  1  |
 | Operating System | Arch Linux (64-bit)                                                |  -  |
 
-[intel-nuc]: https://www.intel.com/content/www/us/en/products/sku/233098/intel-nuc-13-pro-kit-nuc13anhi5/specifications.html
-[intel-i5-1340p]: https://www.intel.com/content/www/us/en/products/sku/232126/intel-core-i51340p-processor-12m-cache-up-to-4-60-ghz/specifications.html
-[corsair-64gb]: https://www.corsair.com/uk/en/p/memory/cmsx64gx4m2a3200c22/vengeancea-series-64gb-2-x-32gb-ddr4-sodimm-3200mhz-cl22-memory-kit-cmsx64gx4m2a3200c22
-[samsung-990pro-2tb]: https://www.samsung.com/uk/memory-storage/nvme-ssd/990-pro-2tb-nvme-pcie-gen-4-mz-v9p2t0bw/
+[intel-nuc]:
+  https://www.intel.com/content/www/us/en/products/sku/233098/intel-nuc-13-pro-kit-nuc13anhi5/specifications.html
+[intel-i5-1340p]:
+  https://www.intel.com/content/www/us/en/products/sku/232126/intel-core-i51340p-processor-12m-cache-up-to-4-60-ghz/specifications.html
+[corsair-64gb]:
+  https://www.corsair.com/uk/en/p/memory/cmsx64gx4m2a3200c22/vengeancea-series-64gb-2-x-32gb-ddr4-sodimm-3200mhz-cl22-memory-kit-cmsx64gx4m2a3200c22
+[samsung-990pro-2tb]:
+  https://www.samsung.com/uk/memory-storage/nvme-ssd/990-pro-2tb-nvme-pcie-gen-4-mz-v9p2t0bw/
 
 |         Partition | Type | Size     | Description                                                                                                                            |
 | ----------------: | ---- | -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,12 +43,16 @@ tags:
   - 6x [Seagate IronWolf 8TB][seagate-ironwolf-8tb] Hard Drives (RAID6);
   - 2x [Seagate FireCuda 1TB][seagate-firecuda-1tb] Solid State Drives for
     Read/Write Cache (RAID1); and
-  - 1x [10Gtek X520-10G-1S-8X][10gtek-x520] 10GbE PCIe Network Card (Intel 82599EN),
+  - 1x [10Gtek X520-10G-1S-8X][10gtek-x520] 10GbE PCIe Network Card (Intel
+    82599EN),
 
 [synology-ds1821]: https://www.synology.com/en-uk/products/DS1821+
-[seagate-x16-16tb]: https://www.seagate.com/files/www-content/datasheets/pdfs/exos-x16-DS2011-1-1904US-en_US.pdf
-[seagate-ironwolf-8tb]: https://www.seagate.com/www-content/datasheets/pdfs/ironwolf-12tb-emea-DS1904-20-2111GB-en_GB.pdf
-[seagate-firecuda-1tb]: https://www.seagate.com/www-content/datasheets/pdfs/firecuda-510-ssd-DS1999-1-1812US-en_US.pdf
+[seagate-x16-16tb]:
+  https://www.seagate.com/files/www-content/datasheets/pdfs/exos-x16-DS2011-1-1904US-en_US.pdf
+[seagate-ironwolf-8tb]:
+  https://www.seagate.com/www-content/datasheets/pdfs/ironwolf-12tb-emea-DS1904-20-2111GB-en_GB.pdf
+[seagate-firecuda-1tb]:
+  https://www.seagate.com/www-content/datasheets/pdfs/firecuda-510-ssd-DS1999-1-1812US-en_US.pdf
 [10gtek-x520]: https://www.10gtek.com/10gnic
 
 ## Network Switches & Router

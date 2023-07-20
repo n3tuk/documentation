@@ -17,6 +17,6 @@ tags:
   - arch-linux
 draft: true
 ---
-{{< alert "edit" >}}
-This document is a placeholder; it has yet to be written.
-{{< /alert >}}
+
+{{< alert "edit" >}} This document is currently just a placeholder; it has yet
+to be written.<br />Please wait for it to be updated. {{< /alert >}}

@@ -1,5 +1,5 @@
 ---
-title: "Wireguard"
+title: Wireguard
 date: 2023-07-19T11:42:23+01:00
 description: |-
   Provide an HTML description of the page or post.

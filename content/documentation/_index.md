@@ -11,8 +11,9 @@ tags:
 draft: true
 groupByYear: false
 ---
-{{< large-icon "folders" >}}
-This website is to provide knowledge and context about the design and structure
-of the infrastructure for the `n3tuk` Organisation. This section provides
-details of the numerous components and services, including a break-down of their
-configuration, and links to any relevant code or external documentation.
+
+{{< large-icon "folders" >}} This website is to provide knowledge and context
+about the design and structure of the infrastructure for the `n3tuk`
+Organisation. This section provides details of the numerous components and
+services, including a break-down of their configuration, and links to any
+relevant code or external documentation.

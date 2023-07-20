@@ -2,11 +2,12 @@
 title: Consul Cluster
 date: 2023-07-19T11:27:02+01:00
 description: |-
-  An overview of the documentation for n3tuk, with links to core sections and
-  important pages.
+  Documentation on the set up and configuration of the Consul cluster in the
+  n3tuk Organisation.
 summary: |-
-  An overview of the documentation for `n3tuk` with links to core sections and
-  important pages.
+  Documentation on the set up and configuration of the Consul cluster used in
+  the `n3tuk` Organiation for the hosting of configurations, service discovery,
+  and the service mesh.
 tags:
   - documentation
   - clusters
@@ -17,6 +18,6 @@ tags:
   - service-mesh
 draft: true
 ---
-{{< alert "edit" >}}
-This document is a placeholder; it has yet to be written.
-{{< /alert >}}
+
+{{< alert "edit" >}} This document is currently just a placeholder; it has yet
+to be written.<br />Please wait for it to be updated. {{< /alert >}}

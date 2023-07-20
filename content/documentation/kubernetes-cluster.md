@@ -1,13 +1,18 @@
 ---
-title: "Documentation for n3tuk"
+title: Kubernetes Cluster
 date: 2023-07-19T11:27:02+01:00
 description: |-
-  An overview of the documentation for n3tuk, with links to core sections and
-  important pages.
+  Documentation on the set up and configuration of the Kubernetes cluster in the
+  n3tuk Organisation.
 summary: |-
-  An overview of the documentation for `n3tuk` with links to core sections and
-  important pages.
-tags: []
+  Documentation on the set up and configuration of the Kubernetes cluster used
+  in the `n3tuk` Organiation for the hosting of services and applications.
+tags:
+  - documentation
+  - clusters
+  - kubernetes
 draft: true
 ---
-Something goes here
+
+{{< alert "edit" >}} This document is currently just a placeholder; it has yet
+to be written.<br />Please wait for it to be updated. {{< /alert >}}

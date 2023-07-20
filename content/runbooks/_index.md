@@ -10,9 +10,10 @@ tags:
 draft: true
 groupByYear: false
 ---
-{{< large-icon "books" >}}
-Runbooks are a set of standardized written procedures for completing tasks which
-must be undertaken manually. This may be because they're not suitable for
-automating (for example, rotating the root certificate), or for helping to deal
-with one-off events, such as incidents or downtime. Ultimately these runbooks
-provide the standard operating procedures in selected situations.
+
+{{< large-icon "books" >}} Runbooks are a set of standardized written procedures
+for completing tasks which must be undertaken manually. This may be because
+they're not suitable for automating (for example, rotating the root
+certificate), or for helping to deal with one-off events, such as incidents or
+downtime. Ultimately these runbooks provide the standard operating procedures in
+selected situations.
