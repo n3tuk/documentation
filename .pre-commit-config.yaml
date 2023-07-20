@@ -15,6 +15,7 @@ repos:
         name: Check for destroyed symlinks in the repository
       - id: check-added-large-files
         name: Check no large files have been added to the commit
+        args: ['--maxkb=750']
       - id: trailing-whitespace
         name: Check all trailing whitespace is removed
         args: [--markdown-linebreak-ext=md]
