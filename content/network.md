@@ -9,6 +9,8 @@ summary: |-
   and networks, as well as the VPNs.
 tags:
   - network
+draft: true
+showEdit: false
 ---
 
 {{< alert "edit" >}} This document is currently just a placeholder; it has yet

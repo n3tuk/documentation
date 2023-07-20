@@ -9,6 +9,7 @@ summary: |-
   general configuration and how they're managed.
 tags:
   - hardware
+showEdit: false
 ---
 
 ## Intel NUC Servers
@@ -38,15 +39,24 @@ tags:
 
 ## Network-Attached Storage
 
-- 1x [Synology DS1821+][synology-ds1821] 8-bay Network Attached Storage, with:
-  - 2x [Seagate Exos X16 16TB][seagate-x16-16tb] Hard Drives (RAID1);
-  - 6x [Seagate IronWolf 8TB][seagate-ironwolf-8tb] Hard Drives (RAID6);
-  - 2x [Seagate FireCuda 1TB][seagate-firecuda-1tb] Solid State Drives for
-    Read/Write Cache (RAID1); and
-  - 1x [10Gtek X520-10G-1S-8X][10gtek-x520] 10GbE PCIe Network Card (Intel
-    82599EN),
+|        Component | Description                                                                  | Qty |
+| ---------------: | ---------------------------------------------------------------------------- | :-: |
+|           System | [Synology DS1821+][synology-ds1821] 8-bay NAS                                |  1  |
+|              RAM | [NEMIX 16GiB][nemix-16gb] (DDR4-2666) EEC SODIMM                             |  2  |
+|   Drives (Media) | [Seagate Exos X16 16TB][seagate-x16-16tb] Hard Drives (RAID1)                |  3  |
+|   Drives (iSCSI) | [Seagate IronWolf 8TB][seagate-ironwolf-8tb] Hard Drives (RAID6)             |  7  |
+|   Drives (Cache) | [Seagate FireCuda 1TB][seagate-firecuda-1tb] Solid State Drives (RAID1)      |  2  |
+|          Network | [10Gtek X520-10G-1S-8X][10gtek-x520] 10GbE PCIe Network Card (Intel 82599EN) |  1  |
+| Operating System | Synology DMS 7.2                                                             |  -  |
+
+{{< alert "disc-drive" >}} The _iSCSI_ drives were purchased in two sets of four
+and three, approximately three years apart and the fourth of the first set is
+available as an on-site spare. The _Media_ drives have an on-site spare as well.
+{{< /alert >}}
 
 [synology-ds1821]: https://www.synology.com/en-uk/products/DS1821+
+[nemix-16gb]:
+  https://nemixram.com/products/ddr4-2666mhz-pc4-21300-ecc-sodimm-compatible-with-synology-diskstation-ds1821?variant=45120171671864
 [seagate-x16-16tb]:
   https://www.seagate.com/files/www-content/datasheets/pdfs/exos-x16-DS2011-1-1904US-en_US.pdf
 [seagate-ironwolf-8tb]:
@@ -57,38 +67,25 @@ tags:
 
 ## Network Switches & Router
 
-- 1x [MiktoTik CRS309 CRS309-1G-8S+IN][mikrotik-crs509] Switch.
-- 1x [MikroTik RB4011iGS+RM][mikrotik-rb4011] Router.
-- 1x [Eaton 5S1500I][eaton-5s1500i] UPS.
+|       Component | Description                                        | Qty |
+| --------------: | -------------------------------------------------- | :-: |
+|          Router | [MikroTik RB4011iGS+RM][mikrotik-rb4011]           |  1  |
+| Backbone Switch | [Mikrotik CRS328-24P-4S+RM][mikrotik-crs328]       |  1  |
+|  Cluster Switch | [MiktoTik CRS309 CRS309-1G-8S+IN][mikrotik-crs309] |  1  |
 
-[mikrotik-crs509]: https://mikrotik.com/product/crs309_1g_8s_in
+[mikrotik-crs309]: https://mikrotik.com/product/crs309_1g_8s_in
+[mikrotik-crs328]: https://mikrotik.com/product/crs328_24p_4s_rm
 [mikrotik-rb4011]: https://mikrotik.com/product/rb4011igs_rm
+
+## UPS Power
+
+| Component | Description                        | Qty |
+| --------: | ---------------------------------- | :-: |
+|       UPS | [Eaton 5S1500I][eaton-5s1500i] UPS |  1  |
+
+{{< alert "power-off" >}} The battery currently provides approximately 55
+minutes of runtime in the event of either a power outage or brownout, and is
+connected via USB to a host using Network USB Tools to distribute events.
+{{< /alert >}}
+
 [eaton-5s1500i]: https://www.eaton.com/gb/en-gb/skuPage.5S1500I.html
-
-## Network
-
-|  VLAN |              IPv4 | Nodes                  |                         Range | Description                                                                 |
-| ----: | ----------------: | :--------------------- | ----------------------------: | :-------------------------------------------------------------------------- |
-| `300` |   `172.27.6.0/26` | 5 NUC Hosts            |    `172.27.6.0 - 172.27.6.63` | Physical Server VLAN                                                        |
-| `301` |  `172.27.6.64/27` | (No Hosts Configured)  |   `172.27.6.64 - 172.27.6.95` | Physical Server VLAN                                                        |
-| `302` |  `172.27.6.96/27` | upto 32 Load Balancers |  `172.27.6.96 - 172.27.6.127` | MetalLB Addresses (BGP via VLAN `302`)                                      |
-| `302` | `172.27.6.128/25` | 45 Virtual Machines    | `172.27.6.128 - 172.27.6.255` | Service Cluster and Kubernetes Virtual Machines (Routable)                  |
-| `303` | `172.27.7.128/25` | Virtual Machines & NAS | `172.27.7.128 - 172.27.7.255` | Virtual Machines (Non-Routable) and Network Attached Storage                |
-|   n/a |   `172.27.8.0/21` | upto 2,048 Services    |  `172.27.8.0 - 172.27.15.255` | Service Addresses (One IPv4 address per service, non-routable outside VLAN) |
-|   n/a |  `172.27.16.0/20` | 16 Nodes               | `172.27.16.0 - 172.27.31.255` | Pod Addresses (One IPv4 `/24` per node, non-routable outside VLAN)          |
-
-Note: The initial configuration for the `metallb` service should just use a
-subset of the Virtual Machine IP address allocation so that it can just allocate
-an unused, but routable IP address. The second stage will be to migrate it to a
-fully owned subnet allocation which can be managed with BGP back to the router,
-which will direct traffic to the correct node
-
-## Domains
-
-|      Name | Description |
-| --------: | :---------- |
-| `kub3.uk` | n/a         |
-| `sit3.uk` | n/a         |
-| `t3st.uk` | n/a         |
-| `pip3.uk` | n/a         |
-| `liv3.uk` | n/a         |
