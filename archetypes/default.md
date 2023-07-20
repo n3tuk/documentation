@@ -1,6 +1,6 @@
 ---
-title: {{ replace .Name "-" " " | title }}
-date: {{ .Date }}
+title: {{replace .Name "-" " " | title}}
+date: {{.Date}}
 description: |-
   Provide an HTML description of the page or post.
 summary: |-

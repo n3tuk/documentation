@@ -2,12 +2,11 @@
 title: {{replace .Name "-" " " | title}}
 date: {{.Date}}
 description: |-
-  Runbook for the general maintenance and management of {{ replace .Name "-" " " | title }}.
+  Runbook for the general maintenance and management of {{replace .Name "-" " "}}.
 summary: |-
-  Runbook for the general maintenance and management of {{ replace .Name "-" " " | title }}.
+  Runbook for the general maintenance and management of {{replace .Name "-" " "}}.
 tags:
   - runbook
-  - clusters
   - {{.Name | lower}}
 draft: true
 ---
@@ -33,18 +32,18 @@ purpose. {{< /alert >}}
 This service is currently dependent upon the following services and/or systems
 for normal operation, and for what reasons that dependency is needed.
 
-| Service |         Importance         | Description   |
-| :------ | :------------------------: | :------------ |
-| {name}  | {critical,high,medium,low} | {description} |
+| Service |                     Importance                      | Description   |
+| :------ | :-------------------------------------------------: | :------------ |
+| {name}  | {{< badge >}}critical,high,medium,low{{< /badge >}} | {description} |
 
 ### Downstream Dependencies
 
 This service is currently dependent upon **by** following services and/or
 systems for normal operation, and for what reasons that dependency is needed.
 
-| Service |         Importance         | Description   |
-| :------ | :------------------------: | :------------ |
-| {name}  | {critical,high,medium,low} | {description} |
+| Service |                     Importance                      | Description   |
+| :------ | :-------------------------------------------------: | :------------ |
+| {name}  | {{< badge >}}critical,high,medium,low{{< /badge >}} | {description} |
 
 ## Maintenance Tasks
 
