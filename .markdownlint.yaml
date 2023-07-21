@@ -29,9 +29,11 @@ MD013:
 # no-inline-html
 MD033:
   allowed_elements:
-    - "a"
-    - "pre"
-    - "br"
+    - a
+    - pre
+    - br
+    - sup
+    - sub
 
 # no-bare-urls
 MD034: false

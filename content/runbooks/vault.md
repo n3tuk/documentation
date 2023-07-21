@@ -1,6 +1,6 @@
 ---
 title: Hasicorp Vault
-date: 2023-07-19T13:50:15+01:00
+date: 2023-07-20T16:00:00+01:00
 description: |-
   Runbook for the general maintenance and management of the Hashicorp Vault
   Cluster for the n3tuk Organisation.
@@ -17,7 +17,6 @@ tags:
   - oidc
   - authentication
   - authorisation
-draft: true
 ---
 
 ## Service Overview
@@ -94,50 +93,79 @@ the store and start processing requests.
    vault operator unseal (
      pass show n3tuk/clusters/vault/keys/unseal \
        | base64 -d \
-       | gpg -d
-   )
+       | gpg -d)
    ```
 
 1. Re-run the above check to verify that the result is `true`.
 
 ### Rekey the Unseal Key
 
-{{< alert "edit" >}} This task is currently just a placeholder; it has yet to be
-written.<br />Please wait for it to be updated. {{< /alert >}}
+As `n3tuk` is purely a private system for Jonathan Wright, and no others are
+involved, the unseal key for Vault is just a single value with only that one
+value being required to unlock.
 
-Vault is managed with a local store which is encrypted at rest on each of the
-nodes of the cluster (even though those drives are encrypted at rest too). The
-key to this local store is not saved with Vault and as such when the cluster
-restarts it must be provided with the that key to start operations.
+In the event that this changes, or during normal rotation of the unseal key,
+then we must `rekey` the unseal key.
 
-- Note
+- There are no investigative steps or tests for this task.
 
-1. Note
+1. Verify that there is no existing re-keying underway:
 
-### Rotate the Encryption Key
+   ```console {linenos=false,hl_lines=[1]}
+   $ vault operator rekey -status -format=json | jq '.started'
+   false
+   ```
 
-{{< alert "edit" >}} This task is currently just a placeholder; it has yet to be
-written.<br />Please wait for it to be updated. {{< /alert >}}
+   If there is a `rekey` started, then run the command to cancel it:
 
-Vault is managed with a local store which is encrypted at rest on each of the
-nodes of the cluster (even though those drives are encrypted at rest too). The
-key to this local store is not saved with Vault and as such when the cluster
-restarts it must be provided with the that key to start operations.
+   ```fish
+   vault operator rekey -cancel
+   ```
 
-- Note
+1. Ensure that the `VAULT_TOKEN` has been escalated to the `root` token for the
+   Vault cluster:
 
-1. Note
+   ```fish
+   set -e VAULT_TOKEN
+   set -Ux VAULT_TOKEN (pass show n3tuk/clusters/vault/tokens/root)
+   ```
 
-### Rotating the Intermediate Certificate Authority
+1. Initiate the `rekey` sequence by configuring the key and the recipients:
 
-{{< alert "edit" >}} This task is currently just a placeholder; it has yet to be
-written.<br />Please wait for it to be updated. {{< /alert >}}
+   ```fish
+   vault operator rekey \
+     -init \
+     -key-shares=1 -key-threshold=1 \
+     -pgp-keys=keybase:jonathanio \
+     -backup
+   ```
 
-Vault is managed with a local store which is encrypted at rest on each of the
-nodes of the cluster (even though those drives are encrypted at rest too). The
-key to this local store is not saved with Vault and as such when the cluster
-restarts it must be provided with the that key to start operations.
+1. Next, provide the unseal key, and as there is just a single key normally, the
+   updated unseal key should be returned, so ensure it is saved back into the
+   password store:
 
-- Note
+   ```fish
+   vault operator rekey (
+     pass show n3tuk/clusters/vault/keys/unseal \
+       | base64 -d \
+       | gpg -d) \
+    | grep -E '^Key' \
+    | awk '{print $3}' \
+    | pass insert --echo --force n3tuk/clusters/vault/keys/unseal
+   ```
 
-1. Note
+1. If there is an issue with the `rekey` process and the original keys have not
+   been deleted or destroyed, the original unseal keys in Vault can be restored
+   by retrieving the backup:
+
+   ```fish
+   vault operator rekey \
+     -backup-retrieve
+   ```
+
+   Otherwise they can be deleted:
+
+   ```fish
+   vault operator rekey \
+     -backup-delete
+   ```
