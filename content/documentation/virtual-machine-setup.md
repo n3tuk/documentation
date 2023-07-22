@@ -1,6 +1,6 @@
 ---
 title: Virtual Machine Server Configuration
-date: 2023-07-19T11:27:02+01:00
+date: 2023-07-23T20:00:00+01:00
 description: |-
   Documentation on the set up and configuration of virtual machine servers in
   the n3tuk Organisation.

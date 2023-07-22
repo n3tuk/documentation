@@ -1,21 +1,19 @@
 ---
 title: All the Bootstrapping
-date: 2023-07-20T21:32:37+01:00
-featureAlt: "The Lotus Temple in New Delhi, DL, India. Photo by Apostrophy Studio."
+date: 2023-07-22T14:00:00+01:00
 tags:
   - post
   - building
   - bootstrapping
-draft: true
 ---
 
 One of the biggest challenges right now during the building out all the
-infrastructure is bootstrapping of the various components to a point at which
-they are minimally operational and self-supporting. Things such as the GitHub
-repositories for code, and managing templates and protections, to Terraform
-Cloud for running the first Infrastructure as Code to deploy other resources, to
-the physical servers which will run the different clusters and Kubernetes are
-all in scope here.
+infrastructure is bootstrapping of the various components to got to a point at
+which they are all minimally operational and self-supporting. Things such as the
+GitHub repositories for code, and managing templates and protections, to
+Terraform Cloud for running the first Infrastructure as Code to deploy other
+resources, to the physical servers which will run the different clusters and
+Kubernetes are all in scope here.
 
 ## GitHub
 
@@ -60,8 +58,8 @@ provide a good replacement option more generally.
 Terraform Cloud will provide the initial facilitation of the deployment of the
 Infrastructure as Code, especially the initial Terraform modules, configurations
 to manage GitHub and Terraform Cloud. Also some of the initial general
-resources, like [Cloudflare DNS][cloudflare-dns] and prepations for [Cloudflare
-Tunnels][cloudflare-tunnels] in the early stages of this build.
+resources, like [Cloudflare DNS][cloudflare-dns] and preparations for
+[Cloudflare Tunnels][cloudflare-tunnels] in the early stages of this build.
 
 Once the first configurations are built they can be imported and self-managed.
 

@@ -1,9 +1,6 @@
 ---
 title: Starting the Build
-date: 2023-07-18T23:16:12+01:00
-featureAlt: "Coffee cup with spoon and sugar cubes in the layout of a clock on a red background. Photo by Stas Knop."
-# description: Automatically generated.
-# summary: Automatically generated.
+date: 2023-07-18T23:00:00+01:00
 tags:
   - post
   - hardware
