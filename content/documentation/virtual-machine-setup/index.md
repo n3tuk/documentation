@@ -20,3 +20,11 @@ draft: true
 
 {{< alert "edit" >}} This document is currently just a placeholder; it has yet
 to be written.<br />Please wait for it to be updated. {{< /alert >}}
+
+## Sub-Documents
+
+| Document                 | Description                                                        |
+| :----------------------- | :----------------------------------------------------------------- |
+| [Partitions][partitions] | A breakdown of the partitions layout for all the Virtual Machines. |
+
+[partitions]: {{< ref "virtual-machine-setup/partitions" >}}
