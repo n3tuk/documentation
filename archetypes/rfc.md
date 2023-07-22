@@ -11,8 +11,6 @@ tags:
   - {{delimit (after 1 (split .Name "-")) "-"}}
 draft: true
 showEdit: true
-editURL: 'https://github.com/n3tuk/documentation/blob'
-editAppendPath: true
 ---
 
 ## Summary
