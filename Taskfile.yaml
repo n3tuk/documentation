@@ -15,8 +15,10 @@ tasks:
     cmds:
       - cmd: |
           hugo serve \
+            --environment local \
             --buildDrafts \
             --buildFuture \
+            --forceSyncStatic \
             --cleanDestinationDir
             --enableGitInfo \
             --navigateToChanged \
