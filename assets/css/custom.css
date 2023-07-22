@@ -1,3 +1,12 @@
+.rounded-md .icon {
+  padding-top: 0.5rem;
+}
+
+div.rounded-md svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 .large-icon svg {
   float: left;
   height: 5em;
@@ -6,5 +15,5 @@
 }
 
 pre.mermaid {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
