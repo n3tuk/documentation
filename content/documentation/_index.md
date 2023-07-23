@@ -12,7 +12,7 @@ groupByYear: false
 ---
 
 {{< figure
-    src="images/collection-of-papers.png"
+    src="images/documentation.png"
     alt="A collection of origami papers"
     >}}
 

@@ -12,7 +12,7 @@ cascade:
 ---
 
 {{< figure
-    src="images/post-in-a-door.png"
+    src="images/posts.png"
     alt="A box of posts in an open doorway"
     >}}
 

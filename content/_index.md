@@ -7,7 +7,7 @@ description: |-
   development space for Jonathan Wright.
 ---
 
-![Network Diagram](images/network-diagram.svg)
+![System Overview](diagrams/system-overview.svg)
 
 The `n3tuk` Organisation is a central organisation within GitHub for the
 management and development of the infrastructure for `n3t.uk`, the personal and
