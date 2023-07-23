@@ -13,7 +13,7 @@ groupByYear: true
 ---
 
 {{< figure
-    src="images/laptop-checklist-alert.png"
+    src="images/incidents.png"
     alt="A laptop, a clipboard with a checklist, a mobile phone"
     >}}
 

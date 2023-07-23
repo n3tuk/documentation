@@ -11,7 +11,7 @@ groupByYear: false
 ---
 
 {{< figure
-    src="images/working-by-light.png"
+    src="images/runbooks.png"
     alt="Engineers working together by nightlight"
     >}}
 

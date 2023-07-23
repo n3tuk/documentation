@@ -11,7 +11,7 @@ groupByYear: false
 ---
 
 {{< figure
-    src="images/collaborating-users.png"
+    src="images/rfcs.png"
     alt="Engineers collaborating together"
     >}}
 
