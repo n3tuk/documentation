@@ -19,7 +19,7 @@ showEdit: false
 |           System | [Intel NUC13ANKi5][intel-nuc]                                      |  1  |
 |              CPU | [Intel Core i5-1340p][intel-i5-1340p] 4.60GHz (4+4/8)              |  1  |
 |              RAM | [Corsair Vengeance 32GiB][corsair-64gb] (DDR4-3200) Non-ECC SODIMM |  2  |
-|            Drive | [Samsung 990 Pro 2TB][samsung-990pro-2tb] PCIe 4.0 NVMe M.2 SSD    |  1  |
+|            Drive | [Seagate FireCuda 530 2TB][firecuda-530-2tb] PCIe 4.0 NVMe M.2 SSD |  1  |
 |          Network | Intel i226-V 2.5GbE Port                                           |  1  |
 | Operating System | Arch Linux (64-bit)                                                |  -  |
 
@@ -29,8 +29,8 @@ showEdit: false
   https://www.intel.com/content/www/us/en/products/sku/232126/intel-core-i51340p-processor-12m-cache-up-to-4-60-ghz/specifications.html
 [corsair-64gb]:
   https://www.corsair.com/uk/en/p/memory/cmsx64gx4m2a3200c22/vengeancea-series-64gb-2-x-32gb-ddr4-sodimm-3200mhz-cl22-memory-kit-cmsx64gx4m2a3200c22
-[samsung-990pro-2tb]:
-  https://www.samsung.com/uk/memory-storage/nvme-ssd/990-pro-2tb-nvme-pcie-gen-4-mz-v9p2t0bw/
+[firecuda-530-2tb]:
+  https://www.seagate.com/gb/en/products/gaming-drives/pc-gaming/firecuda-530-ssd/
 
 |         Partition | Type | Size     | Description                                                                                                                            |
 | ----------------: | ---- | -------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -45,7 +45,7 @@ showEdit: false
 |              RAM | [NEMIX 16GiB][nemix-16gb] (DDR4-2666) EEC SODIMM                             |  2  |
 |   Drives (Media) | [Seagate Exos X16 16TB][seagate-x16-16tb] Hard Drives (RAID1)                |  3  |
 |   Drives (iSCSI) | [Seagate IronWolf 8TB][seagate-ironwolf-8tb] Hard Drives (RAID6)             |  7  |
-|   Drives (Cache) | [Seagate FireCuda 1TB][seagate-firecuda-1tb] Solid State Drives (RAID1)      |  2  |
+|   Drives (Cache) | [Seagate FireCuda 510 1TB][seagate-firecuda-1tb] Solid State Drives (RAID1)  |  2  |
 |          Network | [10Gtek X520-10G-1S-8X][10gtek-x520] 10GbE PCIe Network Card (Intel 82599EN) |  1  |
 | Operating System | Synology DMS 7.2                                                             |  -  |
 
