@@ -1,6 +1,6 @@
 ---
 title: n3tuk RFCs
-date: 2023-07-20T14:45:56+01:00
+date: 2023-07-18T00:00:00+01:00
 description: |-
   RFCs (Request for Comments) for the n3tuk Organisation.
 summary: |-

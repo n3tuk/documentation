@@ -1,6 +1,6 @@
 ---
 title: etcd K/V Store
-date: 2023-07-19T13:50:50+01:00
+date: 2023-12-01T12:00:00+00:00
 description: |-
   Runbook for the general maintenance and management of the etcd Cluster for the
   n3tuk Organisation.

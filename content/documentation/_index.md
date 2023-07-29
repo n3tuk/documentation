@@ -1,5 +1,6 @@
 ---
 title: n3tuk Documentation
+date: 2023-07-18T00:00:00+01:00
 description: |-
   An overview of the documentation for n3tuk, with links to core sections and
   important pages.

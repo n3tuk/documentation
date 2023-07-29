@@ -1,6 +1,6 @@
 ---
 title: Certificate Authority with Hashicorp Vault
-date: 2023-07-19T13:50:30+01:00
+date: 2023-12-01T12:00:00+00:00
 description: |-
   Runbook for the maintenance and management of the intermediate Certificate
   Authority service within the Hashicorp Vault Cluster for the n3tuk

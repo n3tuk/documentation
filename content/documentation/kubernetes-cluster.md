@@ -1,6 +1,6 @@
 ---
 title: Kubernetes Cluster
-date: 2023-07-19T11:27:02+01:00
+date: 2023-12-01T12:00:00+00:00
 description: |-
   Documentation on the set up and configuration of the Kubernetes cluster in the
   n3tuk Organisation.

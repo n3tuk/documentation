@@ -1,6 +1,6 @@
 ---
 title: n3tuk Documentation Website
-date: 2023-07-18T18:10:47+01:00
+date: 2023-07-18T00:00:00+01:00
 description: |-
   An overview of the n3tuk Organisation in GitHub, and how it provides for the
   management of infrastructure and applications as part of the personal
