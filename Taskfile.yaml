@@ -18,11 +18,9 @@ tasks:
             --environment local \
             --buildDrafts \
             --buildFuture \
-            --forceSyncStatic \
-            --cleanDestinationDir
-            --enableGitInfo \
+            --disableFastRender \
             --navigateToChanged \
-            --minify
+            --forceSyncStatic
 
   fmt:
     desc: Format all files with their appropriate tools
@@ -32,9 +30,9 @@ tasks:
   fmt-md:
     desc: Format all markdown with their appropriate tools
     sources:
-      - ".prettierrc"
-      - "archetypes/**/*.md"
-      - "content/**/*.md"
+      - '.prettierrc'
+      - 'archetypes/**/*.md'
+      - 'content/**/*.md'
     cmds:
       - cmd: |-
           find archetypes/ content/ -type f -iname '*.md' \
