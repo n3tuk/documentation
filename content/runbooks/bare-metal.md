@@ -55,6 +55,10 @@ systems for normal operation, and for what reasons that dependency is needed.
 be needed for this service or system, such as rotation of credentials or
 certificates, reclaiming disk space, or other operational tasks. {{< /alert >}}
 
+### UEFI BIOS Update
+
+TODO
+
 ### Name of Task
 
 Provide a description of the task which needs to be documented, providing both

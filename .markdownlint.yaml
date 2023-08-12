@@ -37,3 +37,6 @@ MD033:
 
 # no-bare-urls
 MD034: false
+
+# reference-links-images
+MD052: false

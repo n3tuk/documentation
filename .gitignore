@@ -14,3 +14,6 @@ hugo.linux
 
 # Ignore taskfile processing directory
 .task
+
+# Ignore drawio temporary or backup files
+*.bkp
