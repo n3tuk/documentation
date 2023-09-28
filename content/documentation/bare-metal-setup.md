@@ -102,7 +102,7 @@ the case, re-run the UEFI update above. {{< /alert >}}
       1. `Front Type A Port` to `Enabled`
       1. `Rear Upper Type A Port` and `Rear Lower Type A Port` to `No Detect`
       1. `Internal USB Header Connection 1` and
-         `Internal USB Header Connection 2` to `No` (Prevent access to the
+         `Internal USB Header Connection 2` to `Disabled` (Prevent access to the
          Operating System)
       1. `USB via M.2 2242 Slot` to `No Detect`
       1. `Front Type A Port Power On/Off` to `Enabled`
@@ -133,14 +133,14 @@ the case, re-run the UEFI update above. {{< /alert >}}
 
 1. Move up and then right to select `Power, Performance and Cooling`:
 
-   1. `External Ambient temperature Tolerance` to `30oC`
+   1. `External Ambient temperature Tolerance` to `35oC`
 
    1. For `Secondary Power Settings`:
 
       1. `Button LED` to `Power State Indicator`
-      1. `S0 Indicator Brightness` to `50`
+      1. `S0 Indicator Brightness` to `25`
       1. `S0 Indicator Blinking Behavior` to `Breathing`
-      1. `S0 Indicator Blinking Frequency (Hz)` to `0.2` (every 5 seconds)
+      1. `S0 Indicator Blinking Frequency (Hz)` to `0.1` (every 10 seconds)
       1. `S0 Indicator Color` to `Blue`
       1. `Modern Standby Brightness` to `20`
       1. `Modern Standby Blinking Behavior` to `Solid`
