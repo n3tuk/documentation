@@ -104,7 +104,7 @@ the case, re-run the UEFI update above. {{< /alert >}}
       1. `Internal USB Header Connection 1` and
          `Internal USB Header Connection 2` to `Disabled` (Prevent access to the
          Operating System)
-      1. `USB via M.2 2242 Slot` to `No Detect`
+      1. `USB via M.2 2242 Slot` to `Disabled`
       1. `Front Type A Port Power On/Off` to `Enabled`
       1. `Rear Upper Type A Port Power On/Off` and
          `Rear Lower Type A Port Power On/Off` to `Enabled`
@@ -114,8 +114,8 @@ the case, re-run the UEFI update above. {{< /alert >}}
 
    1. For `Video`:
 
-      1. `IGD Minimum Memory` to `128 MB`
-      1. `IGD Aperture Size` to `128 MB`
+      1. `IGD Minimum Memory` to `64 MB`
+      1. `IGD Aperture Size` to `256 MB`
       1. `IGD Primary Video Port` to `Auto`
       1. `Screen Rotation Policy` to `Normal`
       1. `Display Emulation` to `Virtual display emulation`
