@@ -1,6 +1,6 @@
 ---
 title: OIDC with Hashicorp Vault
-date: 2023-07-19T13:50:20+01:00
+date: 2030-01-01T00:00:00+00:00
 description: |-
   Runbook for the maintenance and management of OIDC services within the
   Hashicorp Vault cluster for the n3tuk Organisation.

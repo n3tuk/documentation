@@ -1,6 +1,6 @@
 ---
 title: Wireguard
-date: 2023-12-01T12:00:00+00:00
+date: 2030-01-01T00:00:00+00:00
 description: |-
   Provide an HTML description of the page or post.
 summary: |-
