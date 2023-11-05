@@ -1,6 +1,6 @@
 ---
 title: Bare-Metal (Intel NUC13ANKi5) Servers
-date: 2023-07-19T13:14:32+01:00
+date: 2030-01-01T00:00:00+00:00
 description: |-
   Runbook for managing bare-metal servers based on Intel NUC13ANKi5 i5-1340p
   systems.

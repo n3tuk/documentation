@@ -1,6 +1,6 @@
 ---
 title: Encryption at Rest with TPM2/LUKS
-date: 2023-07-19T13:14:47+01:00
+date: 2030-01-01T00:00:00+00:00
 description: |-
   Runbook for managing encryption-at-rest using LUKS via cryptsetup,
   specifically on bare-metal servers.

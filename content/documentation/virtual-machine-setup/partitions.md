@@ -1,6 +1,6 @@
 ---
 title: Virtual Machine Partitions
-date: 2023-07-22T20:00:00+01:00
+date: 2030-01-01T00:00:00+00:00
 description: |-
   An overview of the partions required for the virtual machines in the n3tuk
   Organisation.
