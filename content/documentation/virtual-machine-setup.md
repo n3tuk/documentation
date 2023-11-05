@@ -27,4 +27,4 @@ to be written.<br />Please wait for it to be updated. {{< /alert >}}
 | :----------------------- | :----------------------------------------------------------------- |
 | [Partitions][partitions] | A breakdown of the partitions layout for all the Virtual Machines. |
 
-[partitions]: {{< ref "virtual-machine-setup/partitions" >}}
+[partitions]: {{< ref "virtual-machine-setup/partitions.md" >}}
