@@ -12,12 +12,15 @@ tasks:
     summary: |-
       Start Hugo in serve mode to serve the content locally during development.
     run: once
+    vars:
+      date:
+        sh: date -d 'next month' --iso-8601=seconds
     cmds:
       - cmd: |
           hugo serve \
             --environment local \
             --buildDrafts \
-            --buildFuture \
+            --clock '{{ .date }}' \
             --disableFastRender \
             --navigateToChanged \
             --forceSyncStatic
