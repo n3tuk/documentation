@@ -1,6 +1,6 @@
 ---
 title: Hasicorp Vault
-date: 2023-12-01T12:00:00+00:00
+date: 2023-11-01T12:00:00+00:00
 description: |-
   Runbook for the general maintenance and management of the Hashicorp Vault
   Cluster for the n3tuk Organisation.
@@ -63,7 +63,7 @@ systems for normal operation, and for what reasons that dependency is needed.
 
 | Service |                         Importance                         | Description                                                                                                                                                                 |
 | :------ | :--------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| (~All)  | {{< state "triangle-exclamation" >}}critical{{< /state >}} | Vault is a core component of many parts of the `ntkuk` Organisation infrastructure, supporting service secrets and OIDC to facilitate internal and external authentication. |
+| (~All)  | {{< state "triangle-exclamation" >}}critical{{< /state >}} | Vault is a core component of many parts of the `n3tuk` Organisation infrastructure, supporting service secrets and OIDC to facilitate internal and external authentication. |
 
 ## Maintenance Tasks
 
