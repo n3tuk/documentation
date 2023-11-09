@@ -36,15 +36,17 @@ Vault provides:
 
 ## Service Details
 
-| Detail     | Value                                                        |
-| :--------- | :----------------------------------------------------------- |
-| URI        | [`https://vault.kub3.uk`][kub3-vault]                        |
-| Repository | [`https://github.com/n3tuk/infra-vault`][github-infra-vault] |
-| Monitoring | `n/a`                                                        |
-| Logs       | `n/a`                                                        |
-| Alerting   | `n/a`                                                        |
+| Detail     | Value                                                                                                                                                                                   |
+| :--------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| URI        | [`https://vault.p.kub3.uk`][kub3-prd-vault] (Production)<br />[`https://vault.d.kub3.uk`][kub3-dev-vault] (Development)                                                                 |
+| Repository | [`https://github.com/n3tuk/ansible`][github-ansible] (Virtual Machine & Service Installation)<br />[`https://github.com/n3tuk/infra-vault`][github-infra-vault] (Service Configuration) |
+| Monitoring | `n/a`                                                                                                                                                                                   |
+| Logs       | `n/a`                                                                                                                                                                                   |
+| Alerting   | `n/a`                                                                                                                                                                                   |
 
-[kub3-vault]: https://vault.kub3.uk
+[kub3-prd-vault]: https://vault.p.kub3.uk
+[kub3-dev-vault]: https://vault.d.kub3.uk
+[github-ansible]: https://github.com/n3tuk/ansible
 [github-infra-vault]: https://github.com/n3tuk/infra-vault
 
 ### Upstream Dependencies
