@@ -22,11 +22,10 @@ to be written.<br />Please wait for it to be updated. {{< /alert >}}
 
 ## Sub-Documents
 
-| Document                 | Description                                                       |
-| :----------------------- | :---------------------------------------------------------------- |
-| [Partitions][partitions] | A breakdown of the partitions layout for all bare metal machines. |
-
-[partitions]: {{< ref "bare-metal-setup/partitions" >}}
+| Document                                                                                 | Description                                                                                                                             |
+| :--------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| [Partitions]({{< ref "bare-metal-setup/partitions.md" >}})                               | A breakdown of the partitions layout for all bare metal machines.                                                                       |
+| [Arch&nbsp;Linu&nbsp;Installation]({{< ref "bare-metal-setup/arch-linux-install.md" >}}) | A step-by-step guide for the initial configuration of Arch Linux on the server using commands in the live-boot environment, and Ansible |
 
 ## Initial Configuration
 
@@ -209,20 +208,3 @@ the case, re-run the UEFI update above. {{< /alert >}}
       1. `BIOS Self-Help` to `un-checked`
 
 1. Press `F10` to `Save & Exit Setup`. Press `Enter` on `Ok`.
-
-## Initial Installation
-
-### ArchLinux Boot
-
-1. Power on the Intel NUC and regularly press `F10` until the password screen
-   shows.
-1. Enter the Supervisor Password for this system and then select the UEFI image
-   for the USB Drive with the Arch Linux installation image.
-1. The Arch Linux installation image will now boot and drop into a `zsh` session
-   for `root`.
-1. Enter `passwd` and set the password for the installation to `enter` (the
-   default SSH configuration for Arch Linux installations allow `root` access
-   but only with a password or SSH key, so `enter` is just enough to run the
-   installation remotely until the system is configured and rebooted).
-1. Run `ip addr` to check that the `enp06s0` ethernet interface as an IP address
-   for connectivity.
