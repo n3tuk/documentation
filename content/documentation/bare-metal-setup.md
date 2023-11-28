@@ -96,8 +96,7 @@ the case, re-run the UEFI update above. {{< /alert >}}
    1. For `USB`:
 
       1. `Portable Device Charging Mode` is `Off`
-      1. `Front USB Charging Port` to `No Detect` (this will disable the port
-         for the UEFI Firmware, but enable it for the Operating System)
+      1. `Front USB Charging Port` to `Enabled`
       1. `Front Type A Port` to `Enabled`
       1. `Rear Upper Type A Port` and `Rear Lower Type A Port` to `No Detect`
       1. `Internal USB Header Connection 1` and
@@ -114,10 +113,10 @@ the case, re-run the UEFI update above. {{< /alert >}}
    1. For `Video`:
 
       1. `IGD Minimum Memory` to `64 MB`
-      1. `IGD Aperture Size` to `256 MB`
+      1. `IGD Aperture Size` to `128 MB`
       1. `IGD Primary Video Port` to `Auto`
       1. `Screen Rotation Policy` to `Normal`
-      1. `Display Emulation` to `Virtual display emulation`
+      1. `Display Emulation` to `No emulation`
       1. `Clear Software Control State` to `No`
 
    1. For `Add-in Config`:
