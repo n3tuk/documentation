@@ -1,6 +1,6 @@
 ---
 title: Virtual Machine Server Configuration
-date: 2023-11-28T16:00:00+00:00
+date: 2023-11-28T16:00:00Z
 description: |-
   Documentation on the set up and configuration of virtual machine servers in
   the n3tuk Organisation.
@@ -15,7 +15,6 @@ tags:
   - installation
   - ansible
   - arch-linux
-draft: true
 ---
 
 {{< alert "edit" >}} This document is currently just a placeholder; it has yet

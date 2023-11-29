@@ -1,6 +1,6 @@
 ---
 title: Virtual Machine Partitions
-date: 2030-01-01T00:00:00+00:00
+date: 2023-11-28T16:00:00Z
 description: |-
   An overview of the partions required for the virtual machines in the n3tuk
   Organisation.
@@ -12,7 +12,6 @@ tags:
   - documentation
   - virtual-machines
   - partitions
-draft: true
 ---
 
 ## Common Partitions
@@ -22,11 +21,11 @@ machines deployed.
 
 | Partition          | Type           |        Size | Becomes             |
 | :----------------- | :------------- | ----------: | :------------------ |
-| `/dev/vda1`        | `fat32` (boot) |     ~256GiB | `/efi`              |
+| `/dev/vda1`        | `fat32` (boot) |     ~256MiB | `/efi`              |
 | `/dev/vda2`        | LVM            | (remaining) | `lvm:storage`       |
 | `storage:system`   | `ext4`         |        8GiB | `/`                 |
 | `storage:pacman`   | `ext4`         |        2GiB | `/var/cache/pacman` |
-| `storage:journald` | `ext4`         |        1GiB | `/var/log/journal`  |
+| `storage:journald` | `ext4`         |      256MiB | `/var/log/journal`  |
 | `storage:home`     | `ext4`         |      256MiB | `/home`             |
 | `storage:swap`     | `swap`         |        1GiB | `swap`              |
 
@@ -39,19 +38,19 @@ normally be disabled as they will operate at close to full in typical operation.
 
 | Partition       | Type   | Size | Becomes          |
 | :-------------- | :----- | ---: | :--------------- |
-| `storage:vault` | `ext4` | 2GiB | `/var/lib/vault` |
+| `storage:vault` | `ext4` | 8GiB | `/var/lib/vault` |
 
 ## Consul Cluster
 
 | Partition        | Type   | Size | Becomes           |
 | :--------------- | :----- | ---: | :---------------- |
-| `storage:consul` | `ext4` | 2GiB | `/var/lib/consul` |
+| `storage:consul` | `ext4` | 8GiB | `/var/lib/consul` |
 
 ## etcd Cluster
 
 | Partition      | Type   | Size | Becomes         |
 | :------------- | :----- | ---: | :-------------- |
-| `storage:etcd` | `ext4` | 2GiB | `/var/lib/etcd` |
+| `storage:etcd` | `ext4` | 8GiB | `/var/lib/etcd` |
 
 ## Netdata Parent
 
